@@ -3,15 +3,11 @@ class Solution:
         output = ""
         length = len(word)
 
-        count = 0
+        count = 1
         c = word[0]
-        for i in range(length):
-            if word[i] == c:
-                if count == 9:
-                    output += str(count) + c
-                    count = 1
-                else:
-                    count += 1   
+        for i in range(1, length):
+            if word[i] == c and count < 9:
+                count += 1   
             else:
                 output += str(count) + c
                 c = word[i]
