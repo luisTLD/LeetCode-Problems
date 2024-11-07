@@ -8,6 +8,7 @@ class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         values = [] 
         self.foo(root, values)
+        
         return values
 
     def foo(self, node: Optional[TreeNode], values: List[int]):

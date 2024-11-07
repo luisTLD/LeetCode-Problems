@@ -9,6 +9,7 @@ class Solution:
             return head
 
         tmp = head
+        
         while tmp.next:
             if tmp.val == tmp.next.val:
                 tmp.next = tmp.next.next

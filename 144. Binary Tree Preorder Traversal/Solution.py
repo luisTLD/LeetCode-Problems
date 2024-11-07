@@ -8,6 +8,7 @@ class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
         self._preorder(root, result)
+        
         return result
     
     def _preorder(self, node: Optional[TreeNode], result: List[int]):

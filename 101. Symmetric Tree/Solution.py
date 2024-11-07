@@ -15,4 +15,5 @@ class Solution:
             return True
         if not l or not r:
             return False
+            
         return (l.val == r.val) and self.foo(l.left, r.right) and self.foo(l.right, r.left)

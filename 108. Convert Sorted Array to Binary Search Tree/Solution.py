@@ -8,7 +8,6 @@ class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         if not nums:
             return None
-        
         return self.foo(nums, 0, len(nums) - 1)
 
     def foo(self, nums: List[int], left: int, right: int) -> Optional[TreeNode]:

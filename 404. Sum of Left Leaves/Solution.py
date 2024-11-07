@@ -12,7 +12,6 @@ class Solution:
         if node:
             if not node.left and not node.right and is_left:
                 return node.val
-            
             left_sum = self._sumOfLeftLeaves(node.left, is_left = True)
             right_sum = self._sumOfLeftLeaves(node.right, is_left = False)
             

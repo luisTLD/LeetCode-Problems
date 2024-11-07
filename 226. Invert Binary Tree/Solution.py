@@ -7,6 +7,7 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         self._invertTree(root)
+        
         return root
 
     def _invertTree(self, node: Optional[TreeNode]):
