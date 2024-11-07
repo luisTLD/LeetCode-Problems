@@ -3,7 +3,7 @@ class Solution:
         result = 1
         is_negative = n < 0
         n = abs(n)
-
+        
         while n > 0:
             if n % 2 == 1:
                 result *= x
