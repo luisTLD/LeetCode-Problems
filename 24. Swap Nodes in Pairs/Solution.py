@@ -16,6 +16,7 @@ class Solution:
 
         tmp = head
         head = head.next
+        
         while head is not None and head.next is not None:
             aux = head.next
             

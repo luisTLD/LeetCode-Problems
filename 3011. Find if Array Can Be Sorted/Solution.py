@@ -1,6 +1,7 @@
 class Solution:
     def canSortArray(self, nums: list[int]) -> bool:
         loop = len(nums)
+        
         old_big = 0
         big = 0
         small = 0
@@ -32,4 +33,4 @@ class Solution:
         while num:
             num &= num - 1
             count += 1
-        return count
+        return count       
